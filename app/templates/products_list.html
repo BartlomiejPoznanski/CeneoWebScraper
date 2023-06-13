@@ -1,6 +1,7 @@
-{% extends "base.html" %}
-{% block title %}Lista produktów{% endblock %}
+{% extends 'base.html' %}
+{% block title %}Opis projektu {% endblock %}
 {% block content %}
+                    <thead>
                       <tr>
                         <th scope="col">Numer Produktu</th>
                         <th scope="col">Nazwa Produktu</th>
@@ -26,5 +27,6 @@
                             <button type="button" class="btn btn-primary">JSON</button>
                             <button type="button" class="btn btn-primary">XLSX</button>
                         </td>
+                      </tbody>
  {% endblock %}
  
