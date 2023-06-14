@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}Ekstrakcja opinii{% endblock %}
 {% block content %}
+<form method="POST" action="{{url_for('extraction')}}">
     <div class="col-9">
-        <input class="form-control" type="text" placeholder="Wpisz numer produktu">
+        <input class="form-control" type="text" input="product_code" required id="product_code" placeholder="Wpisz numer produktu">
     </div>
     <div class="col-3">
-        <button type="button" class="btn btn-primary">Potwierdź</button>
+        <button type="submit" class="btn btn-primary">Potwierdź</button>
     </div>
+</form>
 {% endblock %}
