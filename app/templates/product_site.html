@@ -4,4 +4,10 @@
 <h3>{{product_code}}</h3>
 {{opinions|safe}}
 {% endblock %}
-{%block scripts%}
+{% block scripts %}
+<script>
+    $(document).ready( function () {
+        $('#opinions').DataTable();
+    } );
+</script>
+{% endblock %}

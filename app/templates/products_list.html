@@ -1,33 +1,19 @@
 {% extends 'base.html' %}
 {% block title %}Lista Produktów {% endblock %}
 {% block content %}
-<table id='opinions'></table>
-                    <thead>
-                      <tr>
-                        <th scope="col">Numer Produktu</th>
-                        <th scope="col">Nazwa Produktu</th>
-                        <th scope="col">Liczba Opinii</th>
-                        <th scope="col">Liczba Wad</th>
-                        <th scope="col">Liczba Zalet</th>
-                        <th scope="col">Średnia Ocena</th>
-                        <th scope="col">Pobierz</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">112233</th>
-                        <td>
-                            <a href="product_site.html" >Produkt1</a>
-                        </td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>5.0</td>
-                        <td>
-                            <button type="button" class="btn btn-primary">CSV</button>
-                            <button type="button" class="btn btn-primary">JSON</button>
-                            <button type="button" class="btn btn-primary">XLSX</button>
-                        </td>
-                      </tbody>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+      A list item
+      <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+      A second list item
+      <span class="badge bg-primary rounded-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+      A third list item
+      <span class="badge bg-primary rounded-pill">1</span>
+  </li>
+</ul>
  {% endblock %}
  
